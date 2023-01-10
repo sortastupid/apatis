@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="{block:English}en{/block:English}{block:German}de{/block:German}{block:French}fr{/block:French}{block:Italian}it{/block:Italian}{block:Japanese}ja{/block:Japanese}{block:Turkish}tr{/block:Turkish}{block:Spanish}es{/block:Spanish}{block:Russian}ru{/block:Russian}{block:Polish}pl{/block:Polish}{block:PortuguesePT}pt-PT{/block:PortuguesePT}{block:PortugueseBR}pt-BR{/block:PortugueseBR}{block:Dutch}nl{/block:Dutch}{block:Korean}ko{/block:Korean}{block:ChineseSimplified}zh-CN{/block:ChineseSimplified}{block:ChineseTraditional}zh-TW{/block:ChineseTraditional}{block:ChineseHK}zh-HK{/block:ChineseHK}{block:Indonesian}id{/block:Indonesian}{block:Hindi}hi{/block:Hindi}">
+<!--
+    
+                         Tumblr Theme by
+         _______  __    __   __  ___  ___   __    _____  
+        |   ____||  |  |  | |  |/  / |  |  |  |  /  __  \  
+        |  |__   |  |  |  | |  '  /  |  |  |  | |  |  |  |
+        |   __|  |  |  |  | |    <   |  |  |  | |  |  |  |
+        |  |     |  `--'  | |  .  \  |  `--'  | |  `--'  |
+        |__|      \______/  |__|\__\  \______/   \______/  
+                       
+                      Apatis Theme v.1.0.0
+             
+-->
+<head>
+    {MobileAppHeaders}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{Title}{block:TagPage} ({lang:Posts tagged Tag}){/block:TagPage}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
+    <meta name="description" content="{MetaDescription}">
+    
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        
+    <link rel="stylesheet" href="https://static.tumblr.com/5ojoydj/rLxrny7g6/style.min.css">
+    <link href="https://static.tumblr.com/0podkko/xIbplezmo/modified_photosets.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/boscoxvi/npfphotosets/npfphotosetstyle.css" rel="stylesheet" type="text/css" />
+            
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,600;1,400;1,500&family=Inter:wght@400;600&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Myeongjo:wght@400;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://assets.tumblr.com/fonts/favorit/stylesheet.css?v=1">
+    {NewPostStyles}
+    
+    {block:Hidden}
+    <meta name="color:Button Background Color" content="#00b8ff" />
+    <meta name="color:Button Text Color" content="#ffffff" />
+    
+    <meta name="color:Body Link Color" content="#111111" />
+    <meta name="color:Body Heading Color" content="#111111" />
+    <meta name="color:Body Text Color" content="#444444" />
+    
+    <meta name="color:Page Line Border Color" content="#111111" />
+    
+    <meta name="if:Custom Title Font" content="0">
+    <meta name="if:Show Featured Posts" content="0">
+    <meta name="if:Show Tags Section" content="0">
+    <meta name='if:Show Recently Liked' content="0">
+    
+    <meta name="select:Font Family" content="Favorit, sans-serif" title="Favorit (Default)">
+    <meta name="select:Font Family" content="Be Vietnam Pro, sans-serif" title="Be Vietnam Pro">
+    <meta name="select:Font Family" content="Inter, sans-serif" title="Inter">
+    <meta name="select:Font Family" content="Roboto, sans-serif" title="Roboto">
+    <meta name="select:Font Family" content="Source Sans Pro, sans-serif" title="Source Sans Pro">
+    
+    <meta name="select:Font Size" content="14" title="14px (Default)">
+    <meta name="select:Font Size" content="15" title="15px">
+    <meta name="select:Font Size" content="16" title="16px">
+            
+    <meta name="select:Shorten Long Post" content="is-shorten-long-post" title="Enable">
+    <meta name="select:Shorten Long Post" content="is-not-shorten-long-post" title="Disable">
+    
+    <meta name="select:Right Sidebar Section" content="is-show-right-sidebar" title="Show">
+    <meta name="select:Right Sidebar Section" content="is-hide-right-sidebar" title="Hide">
+    
+    <meta name='text:Disqus Shortname' content=""/>
+    
+    <meta name="text:Account Follow Heading" content="Who to follow">
+    <meta name="text:Account Follow Lists" content='"changes", "wip", "staff"'>
+    <meta name="text:Tag Lists" content='"funny", "answered", "tumblr", "queue", "featured", "favorite", "announcement", "psa", "memes"'>
+     <meta name="text:Custom HTML" content="&#x3C;h2&#x3E;Here&#x27;s the title&#x3C;/h2&#x3E;&#x3C;p&#x3E;You can put the custom HTML here and it will show up in the sidebar section. To completely hide this, just delete the content here!&#x3C;/p&#x3E;">
+     
+    <meta name="text:Twitter URL" content=""/>
+    <meta name="text:Patreon URL" content=""/>
+    <meta name="text:Twitch URL" content=""/>
+    <meta name="text:Youtube URL" content=""/>
+    <meta name="text:Instagram URL" content=""/>
+    <meta name="text:DeviantArt URL" content=""/>
+    <meta name="text:Reddit URL" content=""/>
+    <meta name="text:Discord URL" content=""/>
+    <meta name="text:Kofi URL" content=""/>
+    {/block:Hidden}
+
+    <style id="main">
+        :root {
+            --title-font: {TitleFont};
+            --title-font-weight: {TitleFontWeight};
+
+            --heading-font:'Nanum Myeongjo', serif;
+            --body-font: {select:Font Family};
+            --code-font: 'Consolas', monospace;
+
+            --accent:{RGBAccentColor}; /* {AccentColor} */
+            --bg-color:{RGBBackgroundColor}; /* {BackgroundColor}*/
+            --border-color:{RGBcolor:Page Line Border Color};
+
+            --bg-img: url('https://assets.tumblr.com/images/x.gif?v=1');
+
+            --bg-card: var(--bg-color);
+            --body-text: {RGBcolor:Body Text Color};
+            --body-link: {RGBcolor:Body Link Color};
+            --heading-text: {RGBcolor:Body Heading Color};
+
+            --btn-primary:{RGBcolor:Button Background Color};
+            --btn-text-primary: {RGBcolor:Button Text Color};
+
+            --text-xxl: clamp(2rem, (1rem + 2.5vw), 3rem);
+            --text-xl: clamp(1.25rem, (1rem + 2.5vw), 2rem);
+            --text-lg: clamp(1rem, (1rem + 2.5vw), 1.125rem);
+            --text-md: clamp(0.85rem, (1rem + 2.5vw) 1rem);
+            --text-sm: clamp(0.65rem, (1rem + 2.5vw), 0.85rem);
+
+            --padding-lg: clamp(1.5rem, 2.5vw, 2.25rem);
+            --padding-md: clamp(1.25rem, 2.5vw, 2rem);
+            --padding-sm: clamp(1rem, 2.5vw, 1.5rem);
+        }
+        
+        html {
+            font-size:{select:Font Size}px;
+        }
+        
+        body > .tmblr-iframe {
+          position: absolute !important;
+          right: calc(50% - 85%/2 + 100px) !important;
+          left: auto;
+          top: 25px;
+          transform: scale(0.85);
+          transform-origin: top right;
+        }
+        @media (max-width:992px) {
+            body > .tmblr-iframe {
+                display:none!important;
+            }
+        }
+        body > .tmblr-iframe.tmblr-iframe--follow-teaser {
+            display:none!important;
+        }
+        .tippy-tooltip.custom-theme {
+            background-color:rgba(var(--accent), 1);
+        }
+        .tippy-tooltip.custom-theme .tippy-svg-arrow {
+          fill: rgba(var(--accent), 1);
+        }
+        #ask_form, #submit_form {
+            margin:1.5rem 0;
+        }
+    </style>
+    <style id="custom">
+        {CustomCSS}
+    </style>
+</head>
+<body class="{block:IfNotShowFeaturedPosts}is-not-featured{/block:IfNotShowFeaturedPosts} {select:Shorten Long Post} {block:IndexPage}{select:Right Sidebar Section}{/block:IndexPage} {block:AskPage}is-hide-right-sidebar{/block:AskPage}  {block:SubmitPage}is-hide-right-sidebar{/block:SubmitPage}" data-type-page="{block:IndexPage}index{/block:IndexPage}{block:PermalinkPage}permalink{/block:PermalinkPage}">
+    
+    <header class="header">
+        <div class="header__inner">
+            <nav class="header__links">
+                <ul>
+                    <li class="header__links__item {block:HomePage}header__links__item--active{/block:HomePage}"><a href="/">Home</a></li>
+                    <li class="header__links__item"><a href="/archive">Archive</a></li>
+                    <li class="header__links__item {block:AskPage}header__links__item--active{/block:AskPage}"><a href="/ask">Message</a></li>
+                    <li class="header__links__item {block:SubmitPage}header__links__item--active{/block:SubmitPage}"><a href="/submit">Submit</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <div class="header__search {block:HideFromSearchEnabled}d-none{/block:HideFromSearchEnabled}">
+                    <form action="/search" method="get">
+                        <input type="search" name="q" value="{SearchQuery}" placeholder="Enter the keyword and press enter...">
+                    </form>
+                </div>
+                <button data-type-button="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+                <button data-type-button="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+        <div class="header__additional">
+            {block:HasPages}
+            <div class="header__additional__navigate">
+                <h2>{lang:Navigate}</h2>
+                <ul>
+                    {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+                </ul>
+            </div>
+            {/block:HasPages}
+            {block:IfShowTagsSection}
+            <div class="header__additional__tags">
+                <h2>Browse by tags</h2>
+                <ul class="tags"></ul>
+            </div>
+            {/block:IfShowTagsSection}
+        </div>
+    </header>
+
+    <main class="wrapper">
+        {block:IndexPage}
+            <div class="wrapper__top">
+                <div class="wrapper__top__main">
+                    {block:ShowAvatar}<img src="{PortraitURL-128}" alt="" id="avatar" class="{AvatarShape}">{/block:ShowAvatar}
+                    {block:ShowTitle}<h1{block:IfCustomTitleFont} id="custom-title"{/block:IfCustomTitleFont}>{Title}</h1>{/block:ShowTitle}
+                    {block:ShowDescription}<p>{Description}</p>{/block:ShowDescription}
+                <div class="wrapper__top__socmed">
+                        <ul>
+                             {block:IfTwitterURL}
+                            <li><a href="{text:Twitter URL}"><i class="lab la-twitter"></i></a></li>
+                             {/block:IfTwitterURL}
+                             
+                             {block:IfPatreonURL}
+                             <li><a href="{text:Patreon URL}"><i class="lab la-patreon"></i></a></li>
+                             {/block:IfPatreonURL}
+                             
+                             {block:IfTwitchURL}
+                             <li><a href="{text:Twitch URL}"><i class="lab la-twitch"></i></a></li>
+                             {/block:IfTwitchURL}
+                             
+                             {block:IfYoutubeURL}
+                             <li><a href="{text:Youtube URL}"><i class="lab la-youtube"></i></a></li>
+                             {/block:IfYoutubeURL}
+                             
+                             {block:IfInstagramURL}
+                             <li><a href="{text:Instagram URL}"><i class="lab la-instagram"></i></a></li>
+                             {/block:IfInstagramURL}
+        
+                             {block:IfDeviantArtURL}
+                             <li><a href="{text:DeviantArt URL}"><i class="lab la-deviantart"></i></a></li>
+                             {/block:IfDeviantArtURL}
+        
+                             {block:IfRedditURL}
+                             <li><a href="{text:Reddit URL}"><i class="lab la-reddit"></i></a></li>
+                             {/block:IfRedditURL}
+        
+                             {block:IfDiscordURL}
+                             <li><a href="{text:Discord URL}"><i class="lab la-discord"></i></a></li>
+                             {/block:IfDiscordURL}
+        
+                             {block:IfKofiURL}
+                             <li><a href="{text:Kofi URL}"><i class="las la-mug-hot"></i></a></li>
+                             {/block:IfKofiURL}
+                        </ul>
+                    </div>
+                </div>
+                
+                {block:IfShowFeaturedPosts}
+                <div class="wrapper__top__featured">
+                    <h1>Featured posts</h1>
+                    <div class="wrapper__article is-featured"></div>
+                </div>
+                {/block:IfShowFeaturedPosts}
+            </div>
+            {/block:IndexPage}
+        
+            {block:Posts}
+            {block:PermalinkPage}
+            <div class="wrapper__top__permalink">
+                {block:Date}
+                <div class="wrapper__top__permalink__notes">
+                    <a href="{Permalink}">{NoteCountWithLabel}</a>
+                    
+                    <div class="wrapper__top__permalink__source">
+                        {block:RebloggedFrom}
+                        <div class="wrapper__top__permalink__source__item">
+                            <a href="{ReblogRootURL}" title="Originally from {ReblogRootName}">
+                                <img src="{ReblogRootPortraitURL-128}" alt="{ReblogRootName}">
+                                
+                            </a>
+                            <span>Originally from {ReblogRootName}</span>
+                        </div>
+                        {/block:RebloggedFrom}
+                        {block:RebloggedFrom}
+                         <div class="wrapper__top__permalink__source__item">
+                            <a href="{ReblogParentURL}" title="{lang:Reblogged from} {ReblogParentName}">
+                                <img src="{ReblogParentPortraitURL-128}" alt="{ReblogParentName}">
+                            </a>
+                            <span>{lang:Reblogged from} {ReblogParentName}</span>
+                         </div>
+                        {/block:RebloggedFrom}
+                        {block:NotReblog}
+                        <div class="wrapper__top__permalink__source__item">
+                            <a href="https://{Name}.tumblr.com/" title="Original post">
+                                <img src="{PortraitURL-128}" alt="{Name}">
+                            </a>
+                            <span>Original post by {Name}</span>
+                        </div>
+                        {/block:NotReblog}
+                    </div>
+                </div>
+                {/block:Date}
+                <div class="wrapper__top__permalink__info">
+                    <a class="date">{lang:Posted on DayOfWeek DayOfMonth Month Year}</a>
+                    
+                    {block:HasTags}
+                        <div class="posts__tags">
+                            <div class="posts__tags__inner">
+                                <ul>
+                                    {block:Tags}
+                                    <li> <a href="{TagURL}">{Tag}</a></li>
+                                    {/block:Tags}
+                                </ul>
+                            </div>
+                        </div>
+                    {/block:HasTags}
+                </div>
+            </div>
+            {/block:PermalinkPage}
+            {/block:Posts}
+        
+        <section class="wrapper__main">
+            <div class="wrapper__main__posts">
+                {block:NoPosts}
+                <article class="posts posts-empty posts-text">
+                     <div class="posts__inner">
+                        <div class="posts__inner__article">
+                         <section class="posts__body">
+                            <h2>{lang:This Tumblr hasnt made any posts}</h2>
+                            <p>{lang:Meditate for a while on this empty Tumblr}</p>
+                          </section>
+                        </div>
+                    </div>
+                </article>
+                {/block:NoPosts}
+                
+                {block:TagPage}
+                <article class="posts posts-empty posts-text">
+                     <div class="posts__inner">
+                         <div class="posts__inner__article">
+                            <section class="posts__body">
+                                <h2>Tagged posts</h2>
+                                <p>{lang:Showing TagResultCount posts tagged Tag 2}</p>
+                            </section>
+                         </div>
+                    </div>
+                </article>
+                {/block:TagPage}
+                
+                {block:SearchPage}
+                <article class="posts posts-empty posts-text">
+                     <div class="posts__inner">
+                         <div class="posts__inner__article">
+                            <section class="posts__body">
+                                <h2>Searched posts</h2>
+                                <p>{lang:Found SearchResultCount results for SearchQuery 2} {block:NoSearchResults}{lang:No search results for SearchQuery 2}{/block:NoSearchResults}</p>
+                            </section>
+                         </div>
+                    </div>
+                </article>
+                {/block:SearchPage}
+                
+                {block:Posts inlineMediaWidth="700" inlineNestedMediaWidth="700"} 
+                <article class="posts posts-{PostType} {block:PinnedPostLabel}{block:IndexPage} pinned{/block:IndexPage}{/block:PinnedPostLabel} {TagsAsClasses}{block:PermalinkPage} posts-permalink{/block:PermalinkPage}" id="{PostID}">
+                    {block:Date}
+                    {block:IndexPage}
+                    <div class="posts__dated">
+                        <div class="posts__dated__perma">
+                          <a href="{Permalink}">{lang:Posted on DayOfWeek DayOfMonth Month Year}</a>
+                        </div>
+                    </div>
+                    {/block:IndexPage}
+                    {/block:Date}
+                    <div class="posts__inner">
+                        {block:IndexPage}
+                        <div class="posts__inner__info">
+                            <div class="posts__source">
+                                {block:RebloggedFrom}
+                                <a href="{ReblogRootURL}" title="Originally from {ReblogRootName}">
+                                    <img src="{ReblogRootPortraitURL-128}" alt="{ReblogRootName}">
+                                </a>
+                                <a href="{ReblogParentURL}" title="{lang:Reblogged from} {ReblogParentName}">
+                                    <img src="{ReblogParentPortraitURL-128}" alt="{ReblogParentName}">
+                                </a>
+                                {/block:RebloggedFrom}
+                                {block:NotReblog}
+                                <a href="https://{Name}.tumblr.com/" title="Original post">
+                                    <img src="{PortraitURL-128}" alt="{Name}">
+                                </a>
+                                {/block:NotReblog}
+                            </div>
+                            <div class="posts__actions">
+                                <a href="{ReblogURL}" class="posts__actions__reblog" aria-label="Reblog">
+                                    <svg fill="currentColor" viewBox="0 0 17 18.1">
+                                        <path d="M12.8.2c-.4-.4-.8-.2-.8.4v2H2c-2 0-2 2-2 2v5s0 1 1 1 1-1 1-1v-4c0-1 .5-1 1-1h9v2c0 .6.3.7.8.4L17 3.6 12.8.2zM4.2 17.9c.5.4.8.2.8-.3v-2h10c2 0 2-2 2-2v-5s0-1-1-1-1 1-1 1v4c0 1-.5 1-1 1H5v-2c0-.6-.3-.7-.8-.4L0 14.6l4.2 3.3z"></path>
+                                      </svg>
+                                </a>
+                                <a href="#" class="posts__actions__likes like" aria-label="Like">{LikeButton}<svg fill="currentColor" viewBox="0 0 20 18">
+                                    <path d="M14.658 0c-1.625 0-3.21.767-4.463 2.156-.06.064-.127.138-.197.225-.074-.085-.137-.159-.196-.225C8.547.766 6.966 0 5.35 0 4.215 0 3.114.387 2.162 1.117c-2.773 2.13-2.611 5.89-1.017 8.5 2.158 3.535 6.556 7.18 7.416 7.875A2.3 2.3 0 0 0 9.998 18c.519 0 1.028-.18 1.436-.508.859-.695 5.257-4.34 7.416-7.875 1.595-2.616 1.765-6.376-1-8.5C16.895.387 15.792 0 14.657 0h.001zm0 2.124c.645 0 1.298.208 1.916.683 1.903 1.461 1.457 4.099.484 5.695-1.973 3.23-6.16 6.7-6.94 7.331a.191.191 0 0 1-.241 0c-.779-.631-4.966-4.101-6.94-7.332-.972-1.595-1.4-4.233.5-5.694.619-.475 1.27-.683 1.911-.683 1.064 0 2.095.574 2.898 1.461.495.549 1.658 2.082 1.753 2.203.095-.12 1.259-1.654 1.752-2.203.8-.887 1.842-1.461 2.908-1.461h-.001z"></path>
+                                  </svg></a>
+                            </div>
+                            {block:HasTags}
+                            <div class="posts__tags">
+                                <div class="posts__tags__inner">
+                                <ul>
+                                    {block:Tags}
+                                    <li> <a href="{TagURL}">{Tag}</a></li>
+                                    {/block:Tags}
+                                </ul>
+                                </div>
+                            </div>
+                            {/block:HasTags}
+                        </div>
+                        {/block:IndexPage}
+                        
+                        <div class="posts__inner__article">
+                        
+                        {block:PinnedPostLabel}
+                        <div class="posts__pinned">
+                            <svg fill="currentColor" viewBox="18 13 12 21">
+                                <path fill-rule="evenodd" d="M26.252 27.266l-2.078 7.592c-.052.19-.296.19-.348 0l-2.078-7.592h4.504zM29.512 14c.268 0 .488.241.488.536v1.746a.554.554 0 01-.255.47l-1.698 1.193v4.009l1.787 1.257-.034.006c.128.107.2.264.199.43v1.744c0 .296-.22.537-.488.537H18.488c-.268 0-.488-.241-.488-.537v-1.743a.555.555 0 01.255-.47l1.698-1.195v-4.008l-1.787-1.258.034-.006a.554.554 0 01-.199-.43v-1.745c0-.295.22-.536.488-.536h11.023z"></path>
+                            </svg>
+                           {PinnedPostLabel}
+                        </div>
+                        {/block:PinnedPostLabel}
+                            <section class="posts__media">
+                                            {block:Text}{block:Title}
+                                            <h1><a href="{Permalink}">{Title}</a></h1>{/block:Title}{/block:Text}{block:Photo}
+                                            <figure>
+                                                {LinkOpenTag}
+                                                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+                                                {LinkCloseTag}
+                                            </figure>
+                                            {/block:Photo}
+                                            
+                                            {block:Photoset}
+                                            <div class="photoset-grid" photoset-layout="{PhotosetLayout}">{block:Photos}<div data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}" data-lowres="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}" onclick="lightbox(this)"><img src="{PhotoURL-HighRes}" /></div>{/block:Photos}</div>{block:Photoset}
+                                            
+                                            {block:Quote}
+                                            <p class="npf_quote {Length}">{Quote}</p>
+                                            {block:Source}<p class="source">&mdash; {Source}</p>{/block:Source}
+                                            {/block:Quote}
+                                            {block:Link}
+                                            <div class="npf-link-block {block:Thumbnail}has-poster not-{/block:Thumbnail}no-poster">
+                                                <a href="{URL}" {Target}>{block:Thumbnail}
+                                                    <div class="poster" style="background-image: url({Thumbnail-HighRes});">{/block:Thumbnail}
+                                                        <div class="title">{Name}</div>{block:Thumbnail}
+                                                    </div>{/block:Thumbnail}
+                                                    <div class="bottom">{block:Excerpt}
+                                                        <div class="description">{Excerpt}</div>{/block:Excerpt}{block:Host}
+                                                        <div class="site-name">{Host}</div>{/block:Host}
+                                                    </div>
+                                                </a>
+                                            </div>{/block:Link}{block:Chat}{block:Title}
+                                            <h1>{Title}</h1>{/block:Title}{block:Lines}
+                                            <p class="npf_chat">{block:Label}
+                                                <b>{Label}</b>{/block:Label}
+                                                {Line}
+                                            </p>{/block:Lines}{/block:Chat}
+                                            {block:Audio}
+                                            <div class="posts__audio">
+                                                <div class="posts__audio--bg">
+                                                    {block:AlbumArt}<img src="{AlbumArtURL}">{/block:AlbumArt}
+                                                </div>
+                                                <div class="posts__audio--album">
+                                                 {block:AlbumArt}<img src="{AlbumArtURL}">{/block:AlbumArt}
+                                                </div>
+                                                <div class="posts__audio--main">
+                                                  {block:AudioPlayer}
+                                                     <div class="posts__audio--play">
+                                                         {AudioPlayer}
+                                                         <span class="custom_audio_buttons"></span>
+                                                            
+                                                         <div class="posts__audio--info">
+                                                            {block:Artist}<h3>{Artist}</h3>{/block:Artist}
+                                                            {block:Album}<p>{Album}</p>{/block:Album}
+                                                            {block:TrackName}<p class="trackname">{TrackName}</p>{/block:TrackName}
+                                                          </div>
+                                                     </div>
+                                                  {/block:AudioPlayer}
+                                                  <div class="posts__audio--time">
+                                                    <span class="custom_audio_current_time"></span>
+                                                    <div class="custom_audio_seekbar"></div>
+                                                    <span class="custom_audio_time_left"></span>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            {/block:Audio}
+                                            {block:Video}<div class="video__p">{Video-700}</div>{/block:Video}
+                                            {block:Answer}
+                                             <div class="posts__question">
+                                                <img class="posts__answerer--img" src="{AskerPortraitURL-64}" alt="">
+                                                <div class="posts__answerer--inner">
+                                                    <div class="posts__question--asker">
+                                                       {lang:Asker asked 2}
+                                                    </div>
+                                                   {Question}
+                                                </div>
+                                            </div>
+                                            
+                                            {block:Answerer}
+                                             <div class="posts__answerer">
+                                             <img class="posts__answerer--img" src="{AnswererPortraitURL-64}" alt="">
+                                                <div class="posts__answerer--inner">
+                                                    <div class="posts__answerer--asker">
+                                                       {Answerer} replied
+                                                    </div>
+                                                {Answer}
+                                                </div>
+                                            </div>
+                                            {/block:Answerer}
+                                            {/block:Answer}                                            
+                                        </section>
+                                        <section class="posts__body">{block:RebloggedFrom}{block:Reblogs}
+                                            <div class="reblog-list">
+                                                <div class="reblog-post-avatar">
+                                                    {block:HasAvatar}
+                                                    <img src="{PortraitURL-64}" />
+                                                        <span>
+                                                            {block:IsActive}{block:HasPermalink}<a href="{Permalink}" class="user-blog">{/block:HasPermalink}{Username}{block:HasPermalink}</a>{/block:HasPermalink}{/block:IsActive}
+                                                            {block:IsDeactivated}
+                                                            {block:HasPermalink}<a href="{Permalink}" class="user-blog is-deactivated">{/block:HasPermalink}{Username}{block:HasPermalink}</a>{/block:HasPermalink}
+                                                            {/block:IsDeactivated}
+                                                        </span>
+                                                    {/block:HasAvatar}
+                                                    </div>
+                                                {Body}
+                                            </div>{/block:Reblogs}{/block:RebloggedFrom}
+                                            {block:NotReblog}
+                                            <div class="original">{block:Text}
+                                                {Body}{/block:Text}{block:Photo}{block:Caption}
+                                                {Caption}{/block:Caption}{/block:Photo}{block:Panorama}{block:Caption}
+                                                {Caption}{/block:Caption}{/block:Panorama}{block:Photoset}{block:Caption}
+                                                {Caption}{/block:Caption}{/block:Photoset}{block:Link}{block:Description}
+                                                {Description}{/block:Description}{/block:Link}{block:Audio}{block:Caption}
+                                                {Caption}{/block:Caption}{/block:Audio}{block:Video}{block:Caption}
+                                                {Caption}{/block:Caption}{/block:Video}{block:Answer}
+                                                {Answer}{/block:Answer}
+                                            </div>{/block:NotReblog}
+                                            
+                                            
+                                            {block:Actions}
+                                            <div class="post-cta-action">
+                                                <a class="btn btn__full btn__primary" href="{url}" rel="nofollow noreferrer noopener" target="_blank">{text}</a>
+                                            </div>
+                                            {/block:Actions}
+                                  </section>
+                        </div>
+                    </div>
+                  </article>
+                  {block:PermalinkPage}
+                        {block:IfShowFeaturedPosts}
+                            <div class="wrapper__top__featured">
+                                <h1>Featured posts</h1>
+                                <div class="wrapper__article is-featured"></div>
+                            </div>
+                        {/block:IfShowFeaturedPosts}
+                    {block:IfDisqusShortname}
+                    <div class="{block:AskPage}d-none{/block:AskPage}  {block:SubmitPage} d-none{/block:SubmitPage}">
+                     <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                            var disqus_shortname = '{text:Disqus Shortname}'; 
+                            var disqus_url = '{Permalink}'; 
+                                            
+                            (function() {
+                                var dsq = document.createElement('script'); 
+                                    dsq.type = 'text/javascript'; 
+                                    dsq.async = true;
+                                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">{lang:Blog comments powered by Disqus}</a></noscript>
+                    </div>
+                   {/block:IfDisqusShortname}                         
+                {/block:PermalinkPage}
+            {/block:Posts}
+
+                  
+            </div>
+            <aside class="wrapper__main__sidebar">
+                {block:IndexPage}
+                <section class="wrapper__sidebar follows">
+                    {block:IfAccountFollowHeading}
+                        <h2>{text:Account Follow Heading}</h2>
+                    {/block:IfAccountFollowHeading}
+                    <ul class="follows__list"></ul>
+                </section>
+                {block:IfCustomHTML}
+                <section class="wrapper__sidebar custom">
+                    {text:Custom HTML}
+                </section>
+                {/block:IfCustomHTML}
+                {block:IfShowRecentlyLiked}
+                <section class="wrapper__sidebar liked" id="liked">
+                    {block:HasLikedPosts}
+                    <h2>{lang:Recently Liked}</h2>
+                    {block:LikedPosts inlineMediaWidth="300" limit="1"}
+                    <article id="{PostID}" class="posts  posts-{PostType}">
+                       <div class="wrapper__top__permalink__source">
+                        {block:RebloggedFrom}
+                        <div class="wrapper__top__permalink__source__item">
+                            <a href="{ReblogRootURL}" title="Originally from {ReblogRootName}">
+                                <img src="{ReblogRootPortraitURL-128}" alt="{ReblogRootName}">
+                                
+                            </a>
+                            <span>Posted by {ReblogRootName}</span>
+                        </div>
+                        {/block:RebloggedFrom}
+                        {block:NotReblog}
+                        <div class="wrapper__top__permalink__source__item">
+                            <a href="https://{Name}.tumblr.com/" title="Original post">
+                                <img src="{PortraitURL-128}" alt="{Name}">
+                            </a>
+                            <span>Original post by {Name}</span>
+                        </div>
+                        {/block:NotReblog}
+                        <br>
+                    </div>
+                      <section class="posts__media">
+                                            {block:Text}{block:Title}
+                                            <h1><a href="{Permalink}">{Title}</a></h1>{/block:Title}{/block:Text}{block:Photo}
+                                            <figure>
+                                                {LinkOpenTag}
+                                                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">
+                                                {LinkCloseTag}
+                                            </figure>
+                                            {/block:Photo}
+                                            
+                                            {block:Photoset}
+                                            <div class="photoset-grid" photoset-layout="{PhotosetLayout}">{block:Photos}<div data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}" data-lowres="{PhotoURL-500}" data-highres="{PhotoURL-HighRes}" onclick="lightbox(this)"><img src="{PhotoURL-HighRes}" /></div>{/block:Photos}</div>{block:Photoset}
+                                            
+                                            {block:Quote}
+                                            <p class="npf_quote {Length}">{Quote}</p>
+                                            {block:Source}<p class="source">&mdash; {Source}</p>{/block:Source}
+                                            {/block:Quote}
+                                            {block:Link}
+                                            <div class="npf-link-block {block:Thumbnail}has-poster not-{/block:Thumbnail}no-poster">
+                                                <a href="{URL}" {Target}>{block:Thumbnail}
+                                                    <div class="poster" style="background-image: url({Thumbnail-HighRes});">{/block:Thumbnail}
+                                                        <div class="title">{Name}</div>{block:Thumbnail}
+                                                    </div>{/block:Thumbnail}
+                                                    <div class="bottom">{block:Excerpt}
+                                                        <div class="description">{Excerpt}</div>{/block:Excerpt}{block:Host}
+                                                        <div class="site-name">{Host}</div>{/block:Host}
+                                                    </div>
+                                                </a>
+                                            </div>{/block:Link}{block:Chat}{block:Title}
+                                            <h1>{Title}</h1>{/block:Title}{block:Lines}
+                                            <p class="npf_chat">{block:Label}
+                                                <b>{Label}</b>{/block:Label}
+                                                {Line}
+                                            </p>{/block:Lines}{/block:Chat}
+                                            {block:Audio}
+                                            <div class="posts__audio">
+                                                <div class="posts__audio--bg">
+                                                    {block:AlbumArt}<img src="{AlbumArtURL}">{/block:AlbumArt}
+                                                </div>
+                                                <div class="posts__audio--album">
+                                                 {block:AlbumArt}<img src="{AlbumArtURL}">{/block:AlbumArt}
+                                                </div>
+                                                <div class="posts__audio--main">
+                                                  {block:AudioPlayer}
+                                                     <div class="posts__audio--play">
+                                                         {AudioPlayer}
+                                                         <span class="custom_audio_buttons"></span>
+                                                            
+                                                         <div class="posts__audio--info">
+                                                            {block:Artist}<h3>{Artist}</h3>{/block:Artist}
+                                                            {block:Album}<p>{Album}</p>{/block:Album}
+                                                            {block:TrackName}<p class="trackname">{TrackName}</p>{/block:TrackName}
+                                                          </div>
+                                                     </div>
+                                                  {/block:AudioPlayer}
+                                                  <div class="posts__audio--time">
+                                                    <span class="custom_audio_current_time"></span>
+                                                    <div class="custom_audio_seekbar"></div>
+                                                    <span class="custom_audio_time_left"></span>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            {/block:Audio}
+                                            {block:Video}<div class="video__p">{Video-700}</div>{/block:Video}
+                                            {block:Answer}
+                                             <div class="posts__question">
+                                                <img class="posts__answerer--img" src="{AskerPortraitURL-64}" alt="">
+                                                <div class="posts__answerer--inner">
+                                                    <div class="posts__question--asker">
+                                                       {lang:Asker asked 2}
+                                                    </div>
+                                                   {Question}
+                                                </div>
+                                            </div>
+                                            
+                                            {block:Answerer}
+                                             <div class="posts__answerer">
+                                             <img class="posts__answerer--img" src="{AnswererPortraitURL-64}" alt="">
+                                                <div class="posts__answerer--inner">
+                                                    <div class="posts__answerer--asker">
+                                                       {Answerer} replied
+                                                    </div>
+                                                {Answer}
+                                                </div>
+                                            </div>
+                                            {/block:Answerer}
+                                            {/block:Answer}                                            
+                                        </section>
+                                        <section class="posts__body">{block:RebloggedFrom}{block:Reblogs}
+                                            <div class="reblog-list">
+                                                <div class="reblog-post-avatar">
+                                                    {block:HasAvatar}
+                                                    <img src="{PortraitURL-64}" />
+                                                        <span>
+                                                            {block:IsActive}{block:HasPermalink}<a href="{Permalink}" class="user-blog">{/block:HasPermalink}{Username}{block:HasPermalink}</a>{/block:HasPermalink}{/block:IsActive}
+                                                            {block:IsDeactivated}
+                                                            {block:HasPermalink}<a href="{Permalink}" class="user-blog is-deactivated">{/block:HasPermalink}{Username}{block:HasPermalink}</a>{/block:HasPermalink}
+                                                            {/block:IsDeactivated}
+                                                        </span>
+                                                    {/block:HasAvatar}
+                                                    </div>
+                                                {Body}
+                                            </div>{/block:Reblogs}{/block:RebloggedFrom}
+                                            {block:NotReblog}
+                                            <div class="original">{block:Text}
+                                                {Body}{/block:Text}{block:Photo}{block:Caption}
+                                                {Caption}{/block:Caption}{/block:Photo}{block:Panorama}{block:Caption}
+                                                {Caption}{/block:Caption}{/block:Panorama}{block:Photoset}{block:Caption}
+                                                {Caption}{/block:Caption}{/block:Photoset}{block:Link}{block:Description}
+                                                {Description}{/block:Description}{/block:Link}{block:Audio}{block:Caption}
+                                                {Caption}{/block:Caption}{/block:Audio}{block:Video}{block:Caption}
+                                                {Caption}{/block:Caption}{/block:Video}{block:Answer}
+                                                {Answer}{/block:Answer}
+                                            </div>{/block:NotReblog}
+                                  </section>
+                    </article>{/block:LikedPosts}
+                    {/block:HasLikedPosts}
+                </section>{/block:IfShowRecentlyLiked}
+                {/block:IndexPage}
+                
+                {block:Posts}
+                    {block:PermalinkPage}
+                        {block:PostNotes}
+                            {PostNotes-64}
+                        {/block:PostNotes}
+                    {/block:PermalinkPage}
+                {/block:Posts}
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <a href="#" class="footer__top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M5 12l7-7 7 7"/></svg> {lang:Back to top}</a>
+            {block:Pagination}
+            <div class="footer__pagination">
+                <ul>
+                    <li><a {block:PreviousPage}href="{PreviousPage}"{/block:PreviousPage}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H6M12 5l-7 7 7 7"/></svg> Prev</a></li>
+                    {block:JumpPagination length="3"}
+                        {block:CurrentPage}
+                          <li class="active"><a href="{URL}" aria-current="true">{PageNumber}</a></li>
+                        {/block:CurrentPage}
+                        {block:JumpPage}
+                          <li><a href="{URL}">{PageNumber}</a></li>
+                        {/block:JumpPage}
+                    {/block:JumpPagination}
+                    <li><a {block:NextPage}href="{NextPage}"{/block:NextPage}>Next <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg></a></li>
+                </ul>
+            </div>
+            {/block:Pagination}
+            {block:PermalinkPagination}
+            <div class="footer__pagination">
+                <ul>
+                    <li><a {block:PreviousPost}href="{PreviousPost}"{/block:PreviousPost}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H6M12 5l-7 7 7 7"/></svg> Prev</a></li>
+                    <li><a {block:NextPost}href="{NextPost}"{/block:NextPost}>Next <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg></a></li>
+                </ul>
+            </div>
+            {/block:PermalinkPagination}
+            <div class="footer__credit">
+                Apatis theme by&nbsp; <a title="Coded by fukuo" href="https://www.tumblr.com/themes/by/nick">Nick</a>. Powered by&nbsp; <svg class="svg-logo logo-tumblr" viewBox="0 0 245 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55px"><g class="logotype" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd"><path d="M28.087 49.57h-8.286c-7.461 0-13.021-3.835-13.021-13.01V21.863H0v-7.957C7.461 11.97 10.582 5.556 10.94 0h7.749v12.616h9.04v9.248h-9.04v12.795c0 3.836 1.937 5.162 5.022 5.162h4.376v9.749zm143.951.43c-3.766 0-7.246-1.254-10.151-3.692v3.262h-11.372V7.993h-4.95V0h17.075v15.305c2.224-1.72 5.919-3.119 9.613-3.119 10.51 0 15.676 7.312 15.676 18.46 0 11.612-5.56 19.354-15.89 19.354zm18.115-.43v-7.921h4.197V7.993h-4.95V0h16.93v41.649h4.377v7.92h-20.554zm-112.456 0v-7.921h4.197V20.68h-4.95v-8.065H92.26V17.6c2.582-3.549 7.39-5.413 11.765-5.413 5.525 0 9.22 2.223 11.658 5.914 1.938-3.261 6.529-5.914 12.125-5.914 11.335 0 14.205 8.961 14.205 16.56v12.903h4.125v7.92h-20.16v-7.92h4.054V27.348c0-3.047-1.04-5.628-5.309-5.628-5.273 0-6.816 4.122-6.816 6.13v13.799h4.233v7.92h-20.267v-7.92H106V27.348c0-3.047-.86-5.628-5.093-5.628-5.238 0-6.96 4.122-6.96 6.13v13.799h4.162v7.92H77.697zm137.494 0v-7.921h4.09V20.68h-4.449v-8.065h15.39v5.341c1.9-3.548 6.133-5.77 10.725-5.77H245V22.76h-5.022c-3.766 0-8.717 1.541-8.717 8.566V41.65h4.126v7.92H215.19zM47.53 50c-11.765 0-14.348-8.853-14.348-14.552V12.616h12.411v22.33c0 3.083.754 5.52 4.807 5.52 6.313 0 7.246-4.695 7.246-5.807V20.681h-4.807v-8.065h16.86V41.65h3.55v7.92H59.296V44.91C56.641 48.172 51.762 50 47.529 50zm121.926-8.996c1.902-.215 6.278-.538 6.278-10.287 0-6.774-2.978-9.498-6.35-9.498-2.905 0-7.102 1.54-7.102 10.25 0 7.24 3.551 9.535 7.174 9.535z" fill-rule="evenodd"></path></g></svg>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- tooltip -->
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/svg-arrow.css" />
+    
+    <!-- audio -->
+    <script src="https://cdn.jsdelivr.net/gh/annasthms/customaudio@latest/customaudio.min.js"></script>
+     
+    <!-- photosets -->
+    <script src="https://cdn.jsdelivr.net/gh/boscoxvi/npfphotosets/npfphotosets.js"></script>
+    <script src="https://static.tumblr.com/0podkko/jfMplm3f8/modified_photosets.js"></script>
+    
+    <!-- main -->
+    <script src="https://static.tumblr.com/5ojoydj/iUornu8y3/app.js"></script>
+    <script src="https://static.tumblr.com/5ojoydj/8Qjrnol6o/tags.js"></script>
+    <script src="https://static.tumblr.com/5ojoydj/wZ8rnp3ko/account.js"></script>
+    
+    <script src="https://static.tumblr.com/5ojoydj/3P3rnte2x/option.js"></script>
+    {block:IfShowFeaturedPosts}
+    <script src="https://static.tumblr.com/5ojoydj/L0arnqub2/text.js"></script>
+    <script type="text/javascript" src="https://{Name}.tumblr.com/api/read/json?&callback=text&tagged=featured"></script>
+    {/block:IfShowFeaturedPosts}
+    <!-- others -->
+    <script>
+        tippy("[title]", {
+            theme:"custom",
+            arrow: tippy.roundArrow,
+            placement: "top",
+            delay: 5, //ms
+            distance: 15, 
+            maxWidth: 300, 
+            followCursor: false,
+            allowHTML: true,
+            ignoreAttributes: true,
+            content(reference) {
+              const title = reference.getAttribute("title");
+              reference.removeAttribute("title");
+              return title;
+            },
+        });
+        
+        let username = [{text:Account Follow Lists}];
+        let tags = [{text:Tag Lists}];
+        
+        window.addEventListener("load", (event) => {
+          followAccounts(username);
+          tagLinks(tags);
+        });
+    </script>
+
+</body>
+</html>
